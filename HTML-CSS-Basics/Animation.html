@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animations</title>
+        
+        <style>
+
+            @keyframes basicanimation {
+                from{
+                    background-color: black;
+                    color: tomato;
+                    font-size: 45px;
+                    padding: 0;
+                    border: 6px dashed burlywood;
+                }
+                to{
+                    background-color: blueviolet;
+                    color: black;
+                    font-size: 50px;
+                    padding: 20px;
+                    box-shadow: 0 0 10px brown;
+                    border: none;
+                }
+
+            }
+            @keyframes animation1 {
+                0%{
+                    background-color: chartreuse;
+                    color: white;
+                    border: 6px solid rgb(10, 10, 9)d;
+                }
+                25%{
+                    background-color: rgb(81, 33, 252);
+                    color: black;
+                    text-shadow: 0 0 10px palevioletred;
+                    border: 6px dotted rgb(197, 43, 16);
+                }
+                50%{
+                    background-color: rgb(87, 241, 120);
+                    color: rgb(241, 236, 236);
+                    border: 6px dashed rgb(138, 79, 3);
+                }
+                75%{
+                    background-color: rgb(235, 33, 167);
+                    color: black;
+                    text-shadow: 0 0 10px rgb(43, 2, 13);
+                    border: 6px double rgb(34, 10, 141);
+                }
+                100%{
+                    background-color: rgb(57, 5, 87);
+                    color: rgb(238, 232, 232);
+                }
+            }
+
+
+         #first{
+             width: 500px;
+             height: 100px;
+             color: white;
+             margin: 100px auto;
+             border: 3px solid blue;
+             display: flex;
+             font-size: 40px;
+             justify-content: center;
+             align-items: center;
+             animation-name: animation1;
+             animation-duration: 5s;
+             animation-delay: 5s;
+             animation-iteration-count: 2;
+         }
+
+         @keyframes bganimation{
+            0%{
+                    background-image: url("https://t4.ftcdn.net/jpg/05/47/97/81/360_F_547978128_vqEEUYBr1vcAwfRAqReZXTYtyawpgLcC.jpg");
+                    background-position: center;
+                    background-size: 100%;
+                    border: 6px solid rgb(10, 10, 9)d;
+                }
+                25%{
+                    background-image: url("https://t3.ftcdn.net/jpg/06/18/96/00/360_F_618960021_rKqsPvR3HOXUcEddryZhVJrYYM1O1QCv.jpg");
+                    background-position: center;
+                    background-size: 100%; 
+                    border: 6px dotted rgb(197, 43, 16);
+                }
+                50%{
+                    background-image: url("https://cdn.wallpapersafari.com/70/53/tZu3hg.jpg");
+                    background-position: center;
+                    background-size: 100%;
+                    border: 6px dashed rgb(138, 79, 3);
+                }
+                75%{
+                    background-image: url("https://th.bing.com/th/id/R.e0e51fc78fdcd06e6d005a3c34ce91fc?rik=iPWJNJtesNHs6Q&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f07%2f21%2f397775-car-sports_car-Super_Car-nature-landscape-road-clouds-Audi-Audi_R8-field-mountains-hills-sun_rays-plants-blue_cars-vehicle.jpg&ehk=lmGk4fH0rlshNdX%2fw90QAqLMtSif9hKqxgKbzI7iRTM%3d&risl=&pid=ImgRaw&r=0");
+                    background-position: center;
+                    background-size: 100%;
+                    border: 6px double rgb(34, 10, 141);
+                }
+                100%{
+                    background-image: url("https://t4.ftcdn.net/jpg/05/60/58/23/360_F_560582375_zOs3MXn2dBa9QFym9HvDqJNF7Ob8FvbE.jpg");
+                    background-position: center;
+                    background-size: 100%;
+                    background-attachment: scroll;
+                }
+
+         }
+
+         #bg{
+             width: 1000px;
+             margin: 50px auto;
+             height: 500px;
+             box-shadow: 0 0 10px brown;
+             background-image: url("https://wallpapersmug.com/download/1024x768/f2da58/mountain-mist-clouds-fog-peak.jpg");
+             background-position: center;
+             background-size: 100%;
+             animation-name: bganimation;
+             animation-duration: 5s;
+             animation-delay: 5s;
+             animation-iteration-count: infinite;
+             animation-direction: alternate-reverse;
+             /*animation-direction=> normal->0 t0 100,reverse->100-0,alternate->0-100 then 100-0, alternate-reverse->100-0 then 0-100 */
+             animation-fill-mode: none;
+             /* we can target the element before its start we can pass-> none,both,forword */
+             
+        /* animation-timing-function:5 values there->ease,linear,ease-in,ease-out,ease-in-out ; */
+             
+         }
+        </style>
+
+    </head>
+    <body>
+        <div id="bg"></div>
+       <div id="first">
+           Animation Container
+       </div>
+        
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rotate</title>
+        <style>
+            div{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                color: rgb(51, 48, 48);
+                background-color: aqua;
+                margin: 100px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                font-weight: bold;
+                border: 10px double darkblue;
+                transition-property: transform;
+                transition-duration: 8s;    
+            }
+            div:hover{
+                background-color: brown;
+                /*transform: rotateX(180deg);-----for x-axis->the value shoude be in "deg"
+                  transform: rotateY(215deg);-------for y-axis->->the value shoude be in "deg" */
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>Doremon</div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scale</title>
+        <style>
+            div{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                color: rgb(51, 48, 48);
+                background-color: aqua;
+                margin: 100px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                font-weight: bold;
+                border: 10px double darkblue;
+                transition-property: transform;
+                transition-duration: 2s;
+                /*transition-timing-function->5 values there->ease,linear,ease-in,ease-out,ease-in-out->define the curve of the flow*/
+                transition-timing-function: ease;
+            }
+            div:hover{
+                background-color: brown;
+                /*transform: scaleX(2);-----for x-axis
+                transform: scaleY(5);-------for y-axis*/
+                /*using scale we can increase or decrease the size */
+                transform: scale(3,3.5);
+            }
+        </style>
+
+    </head>
+    <body>
+        <div>Doremon</div>
+    </body>
+</html>
