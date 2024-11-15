@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Function</title>
+    <style>
+        html, body{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+            background-color: blueviolet;
+        }
+        #nav{
+            height: 100px;
+            width: 100%;
+            background-color: rgb(34, 207, 129);
+        }
+        #center{
+            height: calc(100% - 100px); /*calc fun=>calculations to dynamically set CSS property values. */
+            width: 100%;
+            background-color: rgb(179, 73, 6);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="nav"></div>
+        <div id="center"></div>
+    </div>
+    
+</body>
+</html>
